@@ -164,7 +164,7 @@ def create_app():
 
     cors.init_app(
     app,
-    resources={r"/api/*": {"origins":["*","https://mini-e-commerce-website-five.vercel.app"],
+    resources={r"/api/*": {"origins":"*",
                            "allow_headers": ["Content-Type", "Authorization"],
                            "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]}},
     supports_credentials=True,
